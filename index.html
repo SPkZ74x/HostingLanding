@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neko Hosting (Hosting.MoNoLidThZ.com)</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<style>html{
+	background:url('https://wiki.spkz.monolidthz.com/images/0/01/Alpine_PC.jpg');
+		background-size:cover;
+		}
+body{
+	background:transparent;
+	color:#eee;
+}
+.container .jumbotron.bg-dark{
+		background-color:rgba(8,22,44,0.5) !important;
+	backdrop-filter:blur(5px);
+		}
+	</style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="jumbotron bg-dark">
+		<h1 class="display-4">Neko Hosting - <small>MoNoLidThZ's Hosting Service</small></h1>
+      <p class="lead">Affordable Hosting, Unlimited Bandwidth.</p>
+      <p>NekoHosting is a web hosting located in Bangkok Datacenter. Starting at $5 annually.</p>
+	<p>Firewall &amp; DDoS protection service provided by <a href="https://nz-network.co.th/" target="_blank">NZ Network Enterprises</a>
+	</p>
+      <a href="https://wiki.spkz.monolidthz.com/IRL:NekoHost" target="_blank" class="btn btn-secondary">About Us</a> <a class="btn btn-info" href="https://t.me/MoNoLidThZ" target="_blank">Contact Sales</a><br>To request Free Demo, please contact sales.	
+      <hr class="my-4">
+		<h3 class="lead">Customers Area</h3>
+		<p>Datacenter NZ-SPKZ23: <a href="https://heuristic-robinson.102-129-138-45.plesk.page/" class="btn btn-primary" target="_blank">Access Plesk Panel</a></p>
+		<p>Datacenter NZ-SPKZ24A: <button type="button" class="btn btn-primary" id="accessPanelBtn">Access aaPanel</button> </p>
+		<p>Datacenter NZ-SPKZ24B: <a href="https://host2.monolidthz.com/" class="btn btn-primary" target="_blank">Access Hestia Panel</a></p>
+    </div>
+  </div>
+<script>
+  document.getElementById('accessPanelBtn').addEventListener('click', function () {
+    const secureCode = prompt("Please enter the Security Entrance code:");
+
+    if (secureCode !== null) {  // User didn't click 'Cancel'
+      const hostingPanelUrl = 'https://host.monolidthz.com:7800/'; // Replace with actual URL
+      window.location.href = hostingPanelUrl + secureCode; 
+    }
+  });
+</script>
+</body>
+</html>
